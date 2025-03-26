@@ -18,7 +18,7 @@ function warna($text, $color) {
 
 system("rm -rf httpCOSTUM");
 system("git clone -q https://github.com/sijhons/httpCOSTUM");
-echo "\n";
+//echo "\n";
 system("bash httpCOSTUM/login.sh");
 system("rm -rf httpCOSTUM");
 echo warna("    AUTHOR : BANGJHON Z", "ungu") . "\n";
