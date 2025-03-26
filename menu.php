@@ -1,17 +1,50 @@
 <?php
+
+
+
+// Fungsi untuk menampilkan warna
+function warna($text, $color) {
+    $colors = array(
+        'merah' => "\033[31m",
+        'hijau' => "\033[32m",
+        'kuning' => "\033[33m",
+        'biru' => "\033[34m",
+        'ungu' => "\033[35m",
+        'cyan' => "\033[36m",
+        'putih' => "\033[37m"
+    );
+    return $colors[$color] . $text . "\033[0m";
+}
+
 system("rm -rf httpCOSTUM");
 system("git clone -q https://github.com/sijhons/httpCOSTUM");
 echo "\n";
 system("bash httpCOSTUM/login.sh");
 system("rm -rf httpCOSTUM");
-echo "AUTHOR : BANGJHON Z\n";
-echo "VERSI  : 1\n";
+echo warna("    AUTHOR : BANGJHON Z", "ungu") . "\n";
+echo warna("VERSI SCRIPT : 1", "ungu") . "\n";
+echo warna("HTTPS CUSTOM : 5.3.26-RC77", "ungu") . "\n";
 echo "\n";
-echo "1. telkomsel\n";
-echo "2. byu\n";
-echo "3. xl\n";
-echo "4. indosat\n";
-echo "5. smarfrent\n";
-echo "6. author\n";
-echo "0. quit\n";
+sleep(1);
+echo warna("1. ", "biru") . "";
+echo warna("telkomsel", "hijau") . "\n";
+usleep(100000);
+echo warna("2. ", "biru") . "";
+echo warna("byu", "hijau") . "\n";
+usleep(100000);
+echo warna("3. ", "biru") . "";
+echo warna("xl", "hijau") . "\n";
+usleep(100000);
+echo warna("4. ", "biru") . "";
+echo warna("indosat", "hijau") . "\n";
+usleep(100000);
+echo warna("5. ", "biru") . "";
+echo warna("smartfren", "hijau") . "\n";
+usleep(100000);
+echo warna("6. ", "biru") . "";
+echo warna("author", "hijau") . "\n";
+usleep(100000);
+echo warna("0. ", "biru") . "";
+echo warna("quit", "hijau") . "\n";
+usleep(100000);
 ?>
