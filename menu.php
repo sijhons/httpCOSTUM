@@ -1,4 +1,5 @@
 <?php
+system("rm -rf httpCOSTUM");
 system("git clone -q https://github.com/sijhons/httpCOSTUM");
 echo "\n";
 system("bash httpCOSTUM/login.sh");
