@@ -1,5 +1,6 @@
 #read -p " pesan : " pesan
-read -p " nama : " log
+#read -p " nama : " log
+log="hallo tuan jhon"
 echo -e "$log" > $HOME/.logg
 hari=$(date +%A)
 tanggal=$(date +%d)
