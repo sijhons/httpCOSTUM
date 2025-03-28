@@ -29,6 +29,22 @@ echo warna(" CUSTOM : ", "ungu") . "";
 echo "5.3.26-RC77\n";
 echo warna(" <<ID>> : ", "ungu" . "");
 system("cat /data/data/com.termux/files/usr/bin/mr45card/id");
+// Nama file yang ingin di-deteksi
+$nama_file = "/data/data/com.termux/files/usr/bin/mr45card/1743172587";
+
+// Cek apakah file ada
+if (file_exists($nama_file)) {
+    echo warna(" LICENSI: ", "ungu") . "";
+    sleep(3);
+    echo warna("sudah aktif", "hijau") . ".\n";
+    // Tambahkan kode program Anda di sini
+} else {
+    echo warna(" LICENSI: ", "ungu") . "";
+    sleep(3);
+    echo warna("belum aktif", "merah") . "\n";
+    system("xdg-open https://wa.me/+6289618602219?text=assalamualaikum%20bangjhon%2C%20beli%20licensi%20sebulan%2010k");
+    exit;
+}
 echo "\n";
 sleep(1);
 echo warna("1. ", "biru") . "";
